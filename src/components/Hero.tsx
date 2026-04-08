@@ -43,7 +43,7 @@ export default function Hero() {
           {/* Buttons */}
           <div className="flex items-center justify-center md:justify-start gap-4 mb-6">
             <a
-              href="/CV_Isaias.pdf"
+              href="/Isaias Candia - Resume.pdf"
               download
               className="px-6 py-3 rounded-full border-2 border-gray-900 text-gray-900 font-medium hover:bg-gray-900 hover:text-white transition-colors"
             >

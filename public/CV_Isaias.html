@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaias Candia - Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 11pt;
+      line-height: 1.4;
+      color: #1a1a1a;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in 0.65in;
+    }
+
+    @media print {
+      body { padding: 0; margin: 0; }
+      @page {
+        margin: 0.5in 0.65in;
+        size: letter;
+      }
+      /* Remove browser header/footer (URL, date, page number) */
+      @page :first { margin-top: 0.5in; }
+    }
+
+    /* Header */
+    .header { text-align: center; margin-bottom: 10px; }
+    .header h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 28pt;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      color: #000;
+    }
+    .header .links {
+      font-size: 9pt;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+    .header .links a {
+      color: #2a9d8f;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .header .links a:hover { text-decoration: underline; }
+    .header .links .sep { color: #888; margin: 0 2px; }
+    .header .links .item {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .header .links .icon {
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .header .links .icon svg {
+      width: 12px;
+      height: 12px;
+      fill: #2a9d8f;
+    }
+
+    /* Summary */
+    .summary {
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      font-size: 11pt;
+      line-height: 1.55;
+      margin: 10px 0 14px;
+      padding: 10px 0;
+      border-top: 1px solid #bbb;
+      border-bottom: 1px solid #bbb;
+      color: #1a1a1a;
+    }
+
+    /* Section titles */
+    .section-title {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 12pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-top: 36px;
+      margin-bottom: 8px;
+      line-height: 1;
+      padding-bottom: 0;
+      border-bottom: 0.5px solid #666;
+    }
+
+    /* Experience block */
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0;
+    }
+    .exp-company { font-weight: 700; font-size: 10pt; }
+    .exp-location { font-style: italic; font-size: 10pt; }
+    .exp-role-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+    .exp-role { font-size: 10pt; }
+    .exp-date { font-style: italic; font-size: 10pt; }
+
+    /* Bullet list */
+    .bullets {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 4px;
+    }
+    .bullets li {
+      margin-bottom: 3px;
+      line-height: 1.45;
+      padding-left: 2px;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    /* Tech stack */
+    .tech-stack {
+      margin-top: 3px;
+      margin-bottom: 12px;
+      font-size: 10pt;
+    }
+    .tech-stack strong { font-weight: 700; }
+
+    /* Projects */
+    .project {
+      margin-bottom: 16px;
+      line-height: 1.45;
+    }
+    .project strong { font-weight: 700; }
+
+    /* Education */
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .edu-school { font-weight: 700; font-size: 10pt; text-transform: uppercase; }
+    .edu-location { font-style: italic; font-size: 10pt; }
+    .edu-degree { font-size: 10pt; margin-bottom: 1px; }
+    .edu-honors { font-size: 10pt; }
+    .edu-block { margin-bottom: 8px; }
+
+    /* Skills */
+    .skills-line {
+      margin-bottom: 5px;
+      line-height: 1.55;
+    }
+    .skills-line strong { font-weight: 700; }
+    .skills-line u { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Isaias Candia</h1>
+    <div class="links">
+      <span class="item">
+        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+        <a href="https://www.linkedin.com/in/isaias-candia-a90138248/">LinkedIn</a>
+      </span>
+      <span class="sep">|</span>
+      <span class="item">
+        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.07 21 3 13.93 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.31.03.66-.25.94l-2.2 2.28z"/></svg></span>
+        +595 986654945
+      </span>
+      <span class="sep">|</span>
+      <span class="item">
+        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></span>
+        <a href="https://isaias-candia.vercel.app">isaias-candia.com</a>
+      </span>
+      <span class="sep">|</span>
+      <span class="item">
+        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+        <a href="mailto:isaias.candia.dev@gmail.com">isaias.candia.dev@gmail.com</a>
+      </span>
+      <span class="sep">|</span>
+      <span class="item">
+        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#181717" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></span>
+        <a href="https://github.com/isacandix">GitHub</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    Full-stack developer specialized in SAP BTP with proven experience designing and delivering scalable enterprise applications for S/4HANA Public and Private Cloud. Strong expertise in CAP, RAP, SAP Fiori, and Integration Suite, combined with a background in AI-driven solutions and published ML research. Passionate about building high-quality, scalable systems and solving complex business problems through modern technologies.
+  </div>
+
+  <!-- Professional Experience -->
+  <div class="section-title">Professional Experience</div>
+
+  <!-- Infocenter -->
+  <div class="exp-header">
+    <span class="exp-company">Infocenter SAP Gold Partner</span>
+    <span class="exp-location">Asunción, Paraguay</span>
+  </div>
+  <div class="exp-role-row">
+    <span class="exp-role">SAP BTP Full-Stack Developer</span>
+    <span class="exp-date">January 2025–Present</span>
+  </div>
+  <ul class="bullets">
+    <li>Acted as technical lead for a team of 5 developers, making architecture decisions, gathering requirements, and managing delivery timelines.</li>
+    <li>Designed, developed, and deployed 25+ <strong>Fiori</strong> apps, <strong>CAP</strong> services, and <strong>RAP</strong> extensions using <strong>OData services</strong>, <strong>CDS Views</strong>, <strong>XSUAA</strong>, and <strong>Cloud Foundry</strong>, improving operational efficiency and reducing manual processes.</li>
+    <li>Designed and implemented iFlows in <strong>Integration Suite</strong> to synchronize external systems (Redmine) with S/4HANA using REST APIs, handling data transformation, error handling, and authentication.</li>
+    <li>Leveraged <strong>SAP HANA Cloud</strong> and <strong>Event Mesh</strong> to design scalable, event-driven architectures for enterprise applications.</li>
+    <li>Actively contributed to 5+ <strong>S/4HANA</strong> Public and Private Cloud implementation projects.</li>
+    <li>Mentored 3 junior developers in <strong>SAP BTP</strong> development, accelerating team productivity.</li>
+    <li>Integrated <strong>SAP Joule</strong> capabilities into S/4HANA and SuccessFactors workflows to enhance user productivity through AI-assisted interactions.</li>
+  </ul>
+  <div class="tech-stack"><strong>Tech Stack:</strong> SAP BTP, SAP Fiori, CAP, RAP, OData services, CDS Views, XSUAA, Cloud Foundry, Node.js, SAP HANA Cloud, Event Mesh, Integration Suite, Destinations, SAP Business Application Studio, AI/Joule.</div>
+
+  <!-- Shuangho Hospital -->
+  <div class="exp-header">
+    <span class="exp-company">Shuangho Hospital</span>
+    <span class="exp-location">Taipei, Taiwan</span>
+  </div>
+  <div class="exp-role-row">
+    <span class="exp-role">Research Assistant</span>
+    <span class="exp-date">August 2024–January 2025</span>
+  </div>
+  <ul class="bullets">
+    <li>Contributed to the development of a <strong>Vision Transformer</strong> model that identifies bacterial pathogens from high-resolution microscopy images of cultures, achieving <strong>98% accuracy</strong> and improving reliability in automated pathogen detection.</li>
+    <li>Applied image augmentation techniques to improve model generalization on limited medical datasets.</li>
+    <li>Co-authored a research paper published in <strong>Computer Methods and Programs in Biomedicine</strong> (Elsevier): <em>"Alignment-free Bacterial Pathogen Identification Using Vision Transformer and Image Augmentation Techniques in High-Resolution Microscopy."</em></li>
+  </ul>
+  <div class="tech-stack"><strong>Tech Stack:</strong> Python, PyTorch, Computer Vision, Deep Learning and Image Processing.</div>
+
+  <!-- Projects -->
+  <div class="section-title">Personal Projects</div>
+
+  <div class="project">
+    <strong>Triforce Gym:</strong> A mobile app for gym management with 150+ active users. The owner can manage memberships, payments, attendance, and class schedules. Members can start workouts, track their stats, and manage their profile. Built with a real-time backend using Supabase and PostgreSQL.<br>
+    <strong>Tech Stack:</strong> Expo, React Native, Supabase, PostgreSQL and TypeScript.
+  </div>
+
+  <div class="project">
+    <strong>Joyería Fernando:</strong> A full e-commerce site for a jewelry shop with 2-3k monthly visitors. Customers can browse the catalog, filter by category, add pieces to their cart, and complete their purchase with direct Pagopar payment integration. SEO-optimized with server-side rendering.<br>
+    <strong>Tech Stack:</strong> Next.js, NestJS, PostgreSQL, React, Tailwind CSS, TypeScript and Pagopar.
+  </div>
+
+  <div class="project">
+    <strong>Rastrocero:</strong> A landing page for Rastrocero, a climate intelligence platform that turns organizational data into structured, traceable carbon footprint metrics. The site explains how the platform works across scopes 1, 2, and 3, and guides potential clients toward requesting a demo.<br>
+    <strong>Tech Stack:</strong> React, CSS and JavaScript.
+  </div>
+
+  <!-- Education -->
+  <div class="section-title">Education</div>
+
+  <div class="edu-block">
+    <div class="edu-header">
+      <span class="edu-school">Universidad Politécnica Taiwán-Paraguay</span>
+      <span class="edu-location">Asunción, Paraguay</span>
+    </div>
+    <div class="edu-degree">B.S. in Computer Science Engineering</div>
+  </div>
+
+  <div class="edu-block">
+    <div class="edu-header">
+      <span class="edu-school">National Taiwan University of Science and Technology</span>
+      <span class="edu-location">Taipei, Taiwan</span>
+    </div>
+    <div class="edu-degree">B.S. in Computer Science Engineering (Exchange Program)</div>
+  </div>
+
+  <!-- Certifications -->
+  <div class="section-title">Certifications</div>
+  <ul class="bullets">
+    <li>SAP Certified Associate — Fiori Application Developer</li>
+    <li>SAP Certified Associate — Backend Developer (CAP)</li>
+    <li>TOEFL — International English Certification</li>
+  </ul>
+
+  <!-- Additional Skills -->
+  <div class="section-title">Additional Skills</div>
+
+  <div class="skills-line">
+    <strong>Programming languages:</strong> <u>Advanced</u>: JavaScript/TypeScript, SQL, Python; <u>Intermediate</u>: ABAP.
+  </div>
+  <div class="skills-line">
+    <strong>SAP Technologies:</strong> <u>Advanced</u>: SAP BTP, SAP Fiori, CAP, RAP, OData services, CDS Views, XSUAA, Cloud Foundry, Destinations, SAP Business Application Studio (BAS); <u>Intermediate</u>: Integration Suite, AI/Joule.
+  </div>
+  <div class="skills-line">
+    <strong>Frameworks & Tools:</strong> <u>Advanced</u>: React, Next.js, Node.js, React Native, Expo; <u>Intermediate</u>: NestJS, PyTorch.
+  </div>
+  <div class="skills-line">
+    <strong>Databases:</strong> SAP HANA Cloud, PostgreSQL, Supabase.
+  </div>
+  <div class="skills-line">
+    <strong>AI/ML:</strong> Computer Vision, Deep Learning, Machine Learning, Image Processing.
+  </div>
+  <div class="skills-line">
+    <strong>Languages:</strong> <u>English</u>: Advanced (TOEFL Certified); <u>Spanish</u>: Native.
+  </div>
+
+</body>
+</html>

@@ -23,7 +23,7 @@ export const experiences = [
     company: "Infocenter SAP Gold Partner",
     period: "Jan 2025 — Present",
     description:
-      "Acted as technical lead for a team of 5 developers, making architecture decisions, gathering requirements, and managing delivery timelines. Designed, developed, and deployed 25+ Fiori apps, CAP services, and RAP extensions using OData services, CDS Views, XSUAA, and Cloud Foundry, improving operational efficiency and reducing manual processes. Designed and implemented iFlows in Integration Suite to synchronize external systems (Redmine) with S/4HANA using REST APIs, handling data transformation, error handling, and authentication. Leveraged SAP HANA Cloud and Event Mesh to design scalable, event-driven architectures for enterprise applications. Actively contributed to 5+ S/4HANA Public and Private Cloud implementation projects. Mentored 3 junior developers in SAP BTP development. Integrated SAP Joule capabilities into S/4HANA and SuccessFactors workflows to enhance user productivity through AI-assisted interactions.",
+      "As a technical lead, I manage a team of 5 developers across multiple S/4HANA implementation projects. I design and build Fiori apps, CAP services, and RAP extensions, and handle integrations between SAP and external systems using Integration Suite. I also work with AI capabilities like Joule to improve workflows in S/4HANA and SuccessFactors.",
     skills: [
       { name: "SAP BTP", level: "Advanced" },
       { name: "CAP", level: "Advanced" },
@@ -42,7 +42,7 @@ export const experiences = [
     company: "Shuangho Hospital, Taiwan",
     period: "Aug 2024 — Jan 2025",
     description:
-      "Contributed to the development of a Vision Transformer model that identifies bacterial pathogens from high-resolution microscopy images of cultures, achieving 98% accuracy and improving reliability in automated pathogen detection. Co-authored a research paper published in Computer Methods and Programs in Biomedicine (Elsevier).",
+      "I worked on a Vision Transformer model that identifies bacterial pathogens from microscopy images, achieving 98% accuracy. This research was published in Computer Methods and Programs in Biomedicine (Elsevier).",
     skills: [
       { name: "Python", level: "Advanced" },
       { name: "PyTorch", level: "Intermediate" },

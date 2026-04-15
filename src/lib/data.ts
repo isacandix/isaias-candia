@@ -64,7 +64,7 @@ export const projects = [
     techStack: "Expo · React Native · Supabase · PostgreSQL · TypeScript",
     image: "/projects/triforceapp.png",
     mobile: true,
-    demoUrl: "https://triforceapp.vercel.app/login",
+    demoUrl: "https://apps.apple.com/py/app/triforce-gym/id6761962669?l=en-GB",
   },
   {
     title: "Joyería Fernando",

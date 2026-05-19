@@ -23,13 +23,14 @@ export const experiences = [
     company: "Infocenter SAP Gold Partner",
     period: "Jan 2025 — Present",
     description:
-      "As a technical lead, I manage a team of 5 developers across multiple S/4HANA implementation projects. I design and build Fiori apps, CAP services, and RAP extensions, and handle integrations between SAP and external systems using Integration Suite. I also work with AI capabilities like Joule to improve workflows in S/4HANA and SuccessFactors.",
+      "As a technical lead, I manage a team of 5 developers across multiple S/4HANA implementation projects. I design and build Fiori apps, CAP services, and RAP extensions, and handle integrations between SAP and external systems using Integration Suite. I also work with SAP DMS, designing hybrid document management architectures between S/4HANA and the cloud, and with AI capabilities like Joule to improve workflows in S/4HANA and SuccessFactors.",
     skills: [
       { name: "SAP BTP", level: "Advanced" },
       { name: "CAP", level: "Advanced" },
       { name: "SAP Fiori", level: "Advanced" },
       { name: "Node.js", level: "Advanced" },
       { name: "RAP", level: "Advanced" },
+      { name: "SAP DMS", level: "Advanced" },
       { name: "Integration Suite", level: "Intermediate" },
       { name: "AI / Joule", level: "Intermediate" },
       { name: "SAP Certified — Fiori Developer", level: "Certified" },
@@ -117,4 +118,4 @@ export const aboutStats = {
 };
 
 export const aboutParagraph =
-  "Full-stack developer specialized in SAP BTP with proven experience designing and delivering scalable enterprise applications for S/4HANA Public and Private Cloud. Strong expertise in CAP, RAP, SAP Fiori, and Integration Suite, combined with a background in AI-driven solutions and published ML research. Passionate about building high-quality, scalable systems and solving complex business problems through modern technologies.";
+  "Full-stack developer specialized in SAP BTP with proven experience designing and delivering scalable enterprise applications for S/4HANA Public and Private Cloud. Strong expertise in CAP, RAP, SAP Fiori, SAP DMS, and Integration Suite, combined with a background in AI-driven solutions and published ML research. Passionate about building high-quality, scalable systems and solving complex business problems through modern technologies.";

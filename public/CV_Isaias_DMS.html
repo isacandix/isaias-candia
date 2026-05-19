@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isaias Candia - Currículum</title>
+  <title>Isaias Candia - CV</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -26,7 +26,6 @@
       @page :first { margin-top: 0.5in; }
     }
 
-    /* Header */
     .header { text-align: center; margin-bottom: 10px; }
     .header h1 {
       font-family: 'Times New Roman', Times, serif;
@@ -71,7 +70,6 @@
       fill: #2a9d8f;
     }
 
-    /* Summary */
     .summary {
       font-family: 'Times New Roman', Times, serif;
       font-style: italic;
@@ -84,7 +82,6 @@
       color: #1a1a1a;
     }
 
-    /* Section titles */
     .section-title {
       font-family: 'Times New Roman', Times, serif;
       font-size: 12pt;
@@ -98,7 +95,6 @@
       border-bottom: 0.5px solid #666;
     }
 
-    /* Experience block */
     .exp-header {
       display: flex;
       justify-content: space-between;
@@ -116,7 +112,6 @@
     .exp-role { font-size: 10pt; }
     .exp-date { font-style: italic; font-size: 10pt; }
 
-    /* Bullet list */
     .bullets {
       list-style-type: disc;
       padding-left: 20px;
@@ -129,7 +124,6 @@
     }
     .bullets li strong { font-weight: 700; }
 
-    /* Tech stack */
     .tech-stack {
       margin-top: 3px;
       margin-bottom: 12px;
@@ -137,14 +131,12 @@
     }
     .tech-stack strong { font-weight: 700; }
 
-    /* Projects */
     .project {
       margin-bottom: 16px;
       line-height: 1.45;
     }
     .project strong { font-weight: 700; }
 
-    /* Education */
     .edu-header {
       display: flex;
       justify-content: space-between;
@@ -155,7 +147,6 @@
     .edu-degree { font-size: 10pt; margin-bottom: 1px; }
     .edu-block { margin-bottom: 8px; }
 
-    /* Skills */
     .skills-line {
       margin-bottom: 5px;
       line-height: 1.55;
@@ -166,7 +157,6 @@
 </head>
 <body>
 
-  <!-- Header -->
   <div class="header">
     <h1>Isaias Candia</h1>
     <div class="links">
@@ -197,15 +187,12 @@
     </div>
   </div>
 
-  <!-- Summary -->
   <div class="summary">
-    Desarrollador full-stack especializado en SAP BTP con experiencia comprobada en el diseño y entrega de aplicaciones empresariales escalables para S/4HANA Public y Private Cloud. Sólida experiencia en CAP, RAP, SAP Fiori e Integration Suite, combinada con experiencia en soluciones impulsadas por IA e investigación publicada en ML. Apasionado por construir sistemas escalables y de alta calidad, y resolver problemas de negocio complejos a través de tecnologías modernas.
+    Desarrollador full-stack especializado en SAP BTP y SAP DMS, con experiencia comprobada en el diseño e implementación de arquitecturas híbridas de gestión documental entre S/4HANA y la nube. Sólida experiencia en CAP, RAP, SAP Fiori e Integration Suite, complementada con desarrollo de servicios OData, APIs REST y RFCs para exponer las capacidades de DMS hacia aplicaciones externas. Apasionado por construir soluciones escalables que conecten procesos de negocio con gestión documental moderna.
   </div>
 
-  <!-- Professional Experience -->
   <div class="section-title">Experiencia Profesional</div>
 
-  <!-- Infocenter -->
   <div class="exp-header">
     <span class="exp-company">Infocenter SAP Gold Partner</span>
     <span class="exp-location">Asunción, Paraguay</span>
@@ -215,8 +202,11 @@
     <span class="exp-date">Enero 2025–Presente</span>
   </div>
   <ul class="bullets">
+    <li>Diseñé e implementé una arquitectura híbrida entre <strong>SAP S/4HANA DMS</strong> y <strong>SAP BTP Document Management Service (DMS)</strong> / <strong>Integration Suite</strong>, permitiendo el almacenamiento desacoplado de archivos en repositorios en la nube (<strong>Object Store / AWS S3</strong>) y reduciendo el impacto en la base de datos SAP HANA.</li>
+    <li>Desarrollé servicios <strong>OData</strong> nativos, <strong>APIs REST</strong> y <strong>RFCs</strong> optimizadas para S/4HANA para exponer las capacidades de <strong>SAP DMS</strong> (creación, check-in, check-out y consulta de documentos) hacia aplicaciones externas, portales cloud y plataformas satélites.</li>
+    <li>Desarrollé y adapté aplicaciones <strong>SAP Fiori Elements</strong> y soluciones ad-hoc en <strong>SAPUI5</strong> conectadas a SAP DMS, permitiendo a los usuarios la carga, previsualización y firma digital de adjuntos asociados a objetos de negocio de S/4HANA (Materiales, Órdenes de Mantenimiento PM, Gestión de Calidad QM) sin depender de transacciones SAP GUI.</li>
     <li>Actué como líder técnico de un equipo de 5 desarrolladores, tomando decisiones de arquitectura, relevando requerimientos y gestionando tiempos de entrega.</li>
-    <li>Diseñé, desarrollé y desplegué más de 25 apps <strong>Fiori</strong>, servicios <strong>CAP</strong> y extensiones <strong>RAP</strong> utilizando <strong>OData services</strong>, <strong>CDS Views</strong>, <strong>XSUAA</strong> y <strong>Cloud Foundry</strong>, mejorando la eficiencia operativa y reduciendo procesos manuales.</li>
+    <li>Diseñé, desarrollé y desplegué más de 25 apps <strong>Fiori</strong>, servicios <strong>CAP</strong> y extensiones <strong>RAP</strong> utilizando <strong>OData</strong>, <strong>CDS Views</strong>, <strong>XSUAA</strong> y <strong>Cloud Foundry</strong>, mejorando la eficiencia operativa y reduciendo procesos manuales.</li>
     <li>Diseñé e implementé iFlows en <strong>Integration Suite</strong> para sincronizar sistemas externos (Redmine) con S/4HANA mediante APIs REST, gestionando transformación de datos, manejo de errores y autenticación.</li>
     <li>Utilicé <strong>SAP HANA Cloud</strong> y <strong>Event Mesh</strong> para diseñar arquitecturas escalables y event-driven para aplicaciones empresariales.</li>
     <li>Contribuí activamente en más de 5 proyectos de implementación de <strong>S/4HANA</strong> Public y Private Cloud.</li>
@@ -224,9 +214,8 @@
     <li>Integré capacidades de <strong>SAP Joule</strong> en workflows de S/4HANA y SuccessFactors para mejorar la productividad del usuario mediante interacciones asistidas por IA.</li>
     <li>Desarrollé y personalicé <strong>Adobe Forms</strong> con <strong>SAP Adobe LiveCycle</strong> integrado con S/4HANA, permitiendo la generación dinámica de documentos de negocio como órdenes de servicio y cheques.</li>
   </ul>
-  <div class="tech-stack"><strong>Tech Stack:</strong> SAP BTP, SAP Fiori, CAP, RAP, OData, CDS Views, XSUAA, Cloud Foundry, Node.js, SAP HANA Cloud, Event Mesh, Integration Suite, Destinations, SAP Business Application Studio, Adobe Forms, AI/Joule.</div>
+  <div class="tech-stack"><strong>Tech Stack:</strong> SAP DMS, SAP BTP Document Management Service, Object Store / AWS S3, SAP BTP, SAP Fiori, SAPUI5, Fiori Elements, CAP, RAP, OData, RFC, CDS Views, XSUAA, Cloud Foundry, Node.js, SAP HANA Cloud, Event Mesh, Integration Suite, Destinations, SAP Business Application Studio, Adobe Forms, AI/Joule.</div>
 
-  <!-- Shuangho Hospital -->
   <div class="exp-header">
     <span class="exp-company">Hospital Shuangho</span>
     <span class="exp-location">Taipéi, Taiwán</span>
@@ -242,7 +231,6 @@
   </ul>
   <div class="tech-stack"><strong>Tech Stack:</strong> Python, PyTorch, Computer Vision, Deep Learning e Image Processing.</div>
 
-  <!-- Projects -->
   <div class="section-title">Proyectos Personales</div>
 
   <div class="project">
@@ -260,7 +248,6 @@
     <strong>Tech Stack:</strong> React, CSS y JavaScript.
   </div>
 
-  <!-- Education -->
   <div class="section-title">Educación</div>
 
   <div class="edu-block">
@@ -286,7 +273,6 @@
     </div>
   </div>
 
-  <!-- Certifications -->
   <div class="section-title">Certificaciones</div>
   <ul class="bullets">
     <li>SAP Certified Associate — Fiori Application Developer</li>
@@ -295,9 +281,11 @@
     <li>TOEFL — Certificación Internacional de Inglés</li>
   </ul>
 
-  <!-- Additional Skills -->
   <div class="section-title">Habilidades Adicionales</div>
 
+  <div class="skills-line">
+    <strong>Gestión Documental SAP:</strong> <u>Avanzado</u>: SAP DMS (S/4HANA), SAP BTP Document Management Service, Object Store / AWS S3, OData, RFC, APIs REST, SAP Fiori Elements, SAPUI5.
+  </div>
   <div class="skills-line">
     <strong>Lenguajes de programación:</strong> <u>Avanzado</u>: JavaScript/TypeScript, SQL, Python; <u>Intermedio</u>: ABAP.
   </div>

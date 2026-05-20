@@ -21,7 +21,7 @@ export const experiences = [
   {
     role: "SAP BTP Full-Stack Developer",
     company: "Infocenter SAP Gold Partner",
-    period: "Jan 2025 — Present",
+    period: "Jul 2024 — Present",
     description:
       "As a technical lead, I manage a team of 5 developers across multiple S/4HANA implementation projects. I design and build Fiori apps, CAP services, and RAP extensions, and handle integrations between SAP and external systems using Integration Suite. I also work with SAP DMS, designing hybrid document management architectures between S/4HANA and the cloud, and with AI capabilities like Joule to improve workflows in S/4HANA and SuccessFactors.",
     skills: [

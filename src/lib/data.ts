@@ -1,8 +1,8 @@
 export const personalInfo = {
   name: "Isaias Candia",
-  title: "Computer Science Engineer",
+  title: "Freelance SAP Consultant & Full-Stack Developer",
   tagline:
-    "Building intelligent solutions with SAP BTP, AI/ML, and modern web technologies.",
+    "Independent consultant building intelligent solutions with SAP BTP, ABAP, AI/ML, and modern web technologies.",
   email: "isaias.candia.dev@gmail.com",
   phone: "+595986654945",
   github: "https://github.com/isacandix",
@@ -19,11 +19,11 @@ export const navLinks = [
 
 export const experiences = [
   {
-    role: "SAP BTP Full-Stack Developer",
-    company: "Infocenter SAP Gold Partner",
+    role: "Freelance SAP BTP Consultant",
+    company: "Self-employed · Client: Infocenter (SAP Gold Partner)",
     period: "Jul 2024 — Present",
     description:
-      "As a technical lead, I manage a team of 5 developers across multiple S/4HANA implementation projects. I design and build Fiori apps, CAP services, and RAP extensions, and handle integrations between SAP and external systems using Integration Suite. I also work with SAP DMS, designing hybrid document management architectures between S/4HANA and the cloud, and with AI capabilities like Joule to improve workflows in S/4HANA and SuccessFactors.",
+      "As an independent consultant engaged by Infocenter, I act as technical lead for a team of 5 developers across multiple S/4HANA implementation projects. I design and build Fiori apps, CAP services, and RAP extensions, and handle integrations between SAP and external systems using Integration Suite. I also work with SAP DMS, designing hybrid document management architectures between S/4HANA and the cloud, and with AI capabilities like Joule to improve workflows in S/4HANA and SuccessFactors.",
     skills: [
       { name: "SAP BTP", level: "Advanced" },
       { name: "CAP", level: "Advanced" },
@@ -36,6 +36,23 @@ export const experiences = [
       { name: "SAP Certified — Fiori Developer", level: "Certified" },
       { name: "SAP Certified — CAP Backend", level: "Certified" },
       { name: "TOEFL", level: "Certified" },
+    ],
+  },
+  {
+    role: "Freelance ABAP Consultant",
+    company: "Self-employed · Client: EPI-USE",
+    period: "May 2026 — Present",
+    description:
+      "As an independent ABAP consultant for EPI-USE, I provide development and support for enterprise clients, building custom reports, enhancements (BAdIs, user-exits), and RICEF objects across S/4HANA and SAP ECC. I develop and optimize ABAP and ABAP OO programs following clean-core and performance best practices to deliver maintainable, upgrade-stable code.",
+    skills: [
+      { name: "ABAP", level: "Advanced" },
+      { name: "ABAP OO", level: "Advanced" },
+      { name: "RICEF", level: "Intermediate" },
+      { name: "BAdIs / User-Exits", level: "Intermediate" },
+      { name: "OData", level: "Advanced" },
+      { name: "CDS Views", level: "Advanced" },
+      { name: "S/4HANA", level: "Advanced" },
+      { name: "SAP ECC", level: "Intermediate" },
     ],
   },
   {
@@ -118,4 +135,4 @@ export const aboutStats = {
 };
 
 export const aboutParagraph =
-  "Full-stack developer specialized in SAP BTP with proven experience designing and delivering scalable enterprise applications for S/4HANA Public and Private Cloud. Strong expertise in CAP, RAP, SAP Fiori, SAP DMS, and Integration Suite, combined with a background in AI-driven solutions and published ML research. Passionate about building high-quality, scalable systems and solving complex business problems through modern technologies.";
+  "Independent SAP consultant and full-stack developer working freelance for multiple clients, with proven experience designing and delivering scalable enterprise applications for S/4HANA Public and Private Cloud. Strong expertise in CAP, RAP, SAP Fiori, ABAP, SAP DMS, and Integration Suite, combined with a background in AI-driven solutions and published ML research. Passionate about building high-quality, scalable systems and solving complex business problems through modern technologies.";

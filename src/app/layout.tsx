@@ -11,11 +11,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Portfolio Isaias Candia",
   description:
-    "Computer Science Engineer with experience in SAP BTP, AI/ML, and full-stack development. Portfolio showcasing enterprise applications, mobile apps, and web projects.",
+    "Freelance SAP consultant and full-stack developer with experience in SAP BTP, ABAP, AI/ML, and modern web development. Portfolio showcasing enterprise applications, mobile apps, and web projects.",
   keywords: [
     "Isaias Candia",
-    "Computer Science Engineer",
+    "Freelance SAP Consultant",
     "SAP BTP",
+    "ABAP",
     "Full Stack Developer",
     "AI",
     "Machine Learning",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Portfolio Isaias Candia",
     description:
-      "Computer Science Engineer with experience in SAP BTP, AI/ML, and full-stack development.",
+      "Freelance SAP consultant and full-stack developer with experience in SAP BTP, ABAP, AI/ML, and modern web development.",
     type: "website",
   },
 };
